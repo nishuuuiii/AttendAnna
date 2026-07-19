@@ -64,6 +64,14 @@ while True:
             else:
                 print(f"{matched_name} present for {int(elapsed)}s")
 
+            # Baaki sab ke timers reset karo, sirf current match ka rakho
+            for other_name in list(present_since.keys()):
+                if other_name != matched_name:
+                    del present_since[other_name]
+        else:
+            # Koi detect nahi hua, sab timers reset
+            present_since.clear()
+
         cv2.putText(frame, f"Detected: {matched_name}", (10, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
