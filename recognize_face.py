@@ -10,9 +10,9 @@ cap = cv2.VideoCapture(0)
 print("Camera on. Q dabao band karne ke liye")
 
 frame_count = 0
-present_since = {}  # naam: pehli baar kab dikha
-attendance_marked = set()  # jinki attendance mark ho chuki
-THRESHOLD_SECONDS = 15  # testing ke liye 15 sec (demo mein 2-3 min kar dena)
+present_since = {}  
+attendance_marked = set()  
+THRESHOLD_SECONDS = 15  
 
 while True:
     ret, frame = cap.read()
