@@ -1,5 +1,3 @@
-opencv-python-headless
-deepface
 groq
 python-dotenv
 streamlit
