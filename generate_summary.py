@@ -7,11 +7,11 @@ load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# CSV se attendance data padho
+
 attendance_data = []
 with open("attendance.csv", "r") as f:
     reader = csv.reader(f)
-    next(reader)  # header skip karo
+    next(reader) 
     for row in reader:
         attendance_data.append(row)
 
