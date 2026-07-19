@@ -1,0 +1,6 @@
+opencv-python-headless
+deepface
+tf-keras
+groq
+python-dotenv
+streamlit
