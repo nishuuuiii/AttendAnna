@@ -1,6 +1,5 @@
 opencv-python-headless
-deepface==0.0.93
-tensorflow==2.15.0
+deepface
 groq
 python-dotenv
 streamlit
